@@ -1,0 +1,75 @@
+$color-blue: green;
+$box-width: 100px;
+
+
+@mixin setWHM($w,$h,$m){
+
+	width: $w;
+	height: $h;
+	margin: $m;
+}
+
+body{
+	background-color: $color-blue;
+	font-size:40px;
+	width:$box-width;
+}
+
+h1{
+	color:$color-blue;
+	font-size: 20px;
+
+	float:left;
+	width:100px;
+	height:1px;
+}
+
+h2{
+	@extend h1;
+	color:$color-blue;
+	font-size: 16px;
+
+	float:left;
+}
+
+nav{
+	float:left;
+
+/*	width:200px;
+	height:300px;
+	margin:10px;
+*/
+	@include setWHM(200px,300px,10px);
+
+	
+}
+
+p{
+/*	width:200px;
+	height:300px;
+	margin:10px;
+*/
+	@include setWHM(200px,300px,10px);
+
+	float:left;
+	width: $box-width/2;
+}
+
+.genericArtc{
+/*
+	width:200px;
+	height:300px;
+	margin:10px;
+*/
+	background-color: white;
+
+	float:left;
+
+	@include setWHM(200px,300px,10px);
+
+}
+
+
+@import "testLayout";
+@import "testFonts";
+

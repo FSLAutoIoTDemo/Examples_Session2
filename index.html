@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>My Data Analytics Web Page</title>
+		
+		<!-- Master style sheet -->
+		<link rel="stylesheet" type="text/css" href="main.css" />
+
+		<!-- Open Sans Font -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	</head>
+
+
+	<body>
+		<!-- JQuery -->
+		<script src="jquery-1.11.2.min.js"></script>
+
+		<!-- Google Charts -->
+	    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+	    <!-- My Javascript function -->
+	    <script src="main.js"></script>
+	    <script src="graphs.js"></script>
+
+
+		<header class="headBar"><h1>Data Analysis</h1></header>
+
+
+		<!-- Navigation bar (top or left) -->
+		<nav class="navBar">
+			<ul>
+				<li id="navDataSetA"><h2>Data Set A</h2></li>
+				<li id="navDataSetB"><h2>Data Set B</h2></li>
+			</ul>
+		</nav>
+
+
+		<!-- Main content -->
+		<main role="main">
+
+			<!-- Section of Data Sets -->
+			<section class="dataSetCollection">
+
+				<!-- First Data Set -->
+				<article id="dataSetASect">
+					<h1>Data Set A</h1>
+					<div id="dataSetAChart" class="dataSetGraph"></div>
+					<img src="tick.svg" />
+					<p> This data means something!</p>				
+				</article>
+
+				<!-- Second Data Set -->
+				<article id="dataSetBSect">
+					<h1>Data Set B</h1>
+					<div id="dataSetBChart" class="dataSetGraph"></div>
+					<img src="tick.svg" />
+					<p> Wow, new data here!</p>				
+				</article>
+
+			</section>
+
+		</main>
+	</body>
+</html>
